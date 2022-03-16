@@ -32,6 +32,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="src/js/morris.js"></script>
 </head>
 <body>
+<form id="form1" runat="server">
+
     <section id="container">
 <!--header start-->
 <header class="header fixed-top clearfix">
@@ -239,10 +241,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                 <form id="form1" runat="server">
-                     <il><a href="#"><i class="fa fa-key"></i><asp:LinkButton ID="LinkButton1" 
+                 
+                     <il><a href="#"><i class="fa fa-key"> </i><asp:LinkButton ID="LinkButton1" 
                          runat="server" onclick="LinkButton1_Click">Log Out</asp:LinkButton></a></il>
-                 </form>
+                 
                
                 
             </ul>
@@ -261,7 +263,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a class="active" href="index.html">
+                    <a class="active" href="Dashbord.aspx">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -278,6 +280,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><a href="grids.html">Grids</a></li>
                     </ul>
                 </li>
+
+                 <li>
+                    <a href="ManageUser.aspx">
+                        <i class="fa fa-user"></i>
+                        <span>Manage User </span>
+                    </a>
+                </li>
+
+                 <li>
+                    <a href="ManageService.aspx">
+                        <i class="fa fa-tasks"></i>
+                        <span>Manage Service </span>
+                    </a>
+                </li>
+
                 <li>
                     <a href="fontawesome.html">
                         <i class="fa fa-bullhorn"></i>
@@ -287,11 +304,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-th"></i>
-                        <span>Data Tables</span>
+                        <span>Manage Products</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
+                        <li><a href="ManageCategory.aspx">Manage Category</a></li>
+                        <li><a href="# ">Manage Product</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
@@ -467,6 +484,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
     </script>
     <!-- //calendar -->
-   
+   </form>
 </body>
 </html>

@@ -32,78 +32,27 @@
                 <h3 class="title-style">Services We're offering</h3>
             </div>
             <div class="row align-items-center">
+               
+               <asp:Repeater ID="Repeater1" runat="server">
+
+               <ItemTemplate>
+
                 <div class="col-lg-4 col-sm-6">
                     <div class="grids-1">
                         <div class="icon-style">
                             <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">Digital Solution</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
+                        </div
+                        <h4 class="title-head mb-2"><a href="#"> <%# Eval("title") %></a></h4>
+                        <p><%# Eval("description").ToString().Length > 180 ? Eval("Comments").ToString().Substring(0, 180) + "...(Read More)" : Eval("description").ToString()%></p>
+                        <a href="#" class="btn btn-style btn-style-primary mt-4">Read More<i
                                 class="fas fa-arrow-right ms-1"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mt-sm-5 mt-4">
-                    <div class="grids-1 active">
-                        <div class="icon-style">
-                            <i class="fas fa-edit"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">Business Plan</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
-                                class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
-                    <div class="grids-1">
-                        <div class="icon-style">
-                            <i class="fas fa-chess"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">StartUp</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
-                                class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mt-sm-5 mt-4">
-                    <div class="grids-1">
-                        <div class="icon-style">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">Expert Advice</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
-                                class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="grids-1">
-                        <div class="icon-style">
-                            <i class="fas fa-clone"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">Custom Redesign</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
-                                class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mt-sm-5 mt-4">
-                    <div class="grids-1">
-                        <div class="icon-style">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4 class="title-head mb-2"><a href="about.html">Creative Idea</a></h4>
-                        <p>Sed ut unde omnis iste natus error sit oluptatem accusa ntium dolo remque
-                            ladase.</p>
-                        <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
-                                class="fas fa-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
+
+               </ItemTemplate>
+
+               </asp:Repeater>
+               
             </div>
         </div>
     </section>

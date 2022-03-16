@@ -31,7 +31,7 @@
                 Sign In Now</h2>
             <form id="form1" runat="server">
             <asp:TextBox ID="TextBox1" runat="server" class="ggg" name="Email" placeholder="E-MAIL"></asp:TextBox>
-            <asp:TextBox ID="TextBox2" runat="server" class="ggg" name="Password" placeholder="PASSWORD"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" class="ggg" name="Password" TextMode="Password" placeholder="PASSWORD"></asp:TextBox>
             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
             <span>
                 <input type="checkbox" />Remember Me</span>
